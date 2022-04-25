@@ -23,7 +23,6 @@ const getQuote = async () => {
     })
     loading(false)
     const data = await response.json()
-    console.log(data)
     // If Author is blank, add 'Unknown'
     authorText.innerText = data.quoteAuthor === '' ? 'Unknown' : data.quoteAuthor
 
